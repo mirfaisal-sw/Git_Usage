@@ -1,0 +1,43 @@
+
+$mkdir My-Git
+$cd My-Git
+$git init
+
+$ls -la
+o/p - .git
+
+$cd .git
+$ls
+o/p - branches config description HEAD hooks info objects refs
+$cat HEAD
+o/p - refs/heads/master
+
+Note - All objects are stored in .git/objects folder.
+$ find .git/objects -type f //Find files
+
+=>List files in staging area
+$git ls-files -s
+
+=>To show status of Git:-
+$git status
+
+=>Command to set Git author name and email:-
+$git config --gloabal user.name <Name>
+$git config --gloabal user.email <Email>
+$git config --list
+
+=>Git command to unstage a file:-
+$git rm --cached <file>
+
+=>Checkout commit or branch:-
+$git checkout <commit/file/branch>
+
+=>Branch:-
+->Pointers for all branches are located in .git/refs/heads fol
+
+=>Git checkout:-
+$git checkout <branch>
+$git checkout <sha1>
+
+
+
