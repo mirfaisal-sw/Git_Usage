@@ -36,8 +36,15 @@ $git checkout <commit/file/branch>
 ->Pointers for all branches are located in .git/refs/heads fol
 
 =>Git checkout:-
-$git checkout <branch>
-$git checkout <sha1>
+$git checkout <branch>  //Change reference to specific branch
+$git checkout <sha1>   //Change reference to specific commit
+
+=>How to find HEAD is pointing to which branch or commit?
+$cat .git/HEAD
+O/p - ref: refs/heads/mir-feature1
+
+=>Note - "git checkout" command just moves HEAD pointer and nothing
+else.
 
 
 
