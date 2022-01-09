@@ -46,5 +46,29 @@ O/p - ref: refs/heads/mir-feature1
 =>Note - "git checkout" command just moves HEAD pointer and nothing
 else.
 
+=>Git commands for branch management:-
+->List all local branches
+$git branch
+
+->Create new branch:-
+$git branch <name>
+
+->Create a branch with checkout:-
+$git checkout -b <branch name>
+
+->Checkout specific branch
+$git checkout <branch name>
+
+->Delete unmerged branch:-
+$git -D <branch>
+
+->Delete merged branch:-
+$git -d <branch>
+
+->Rename a branch:-
+$git branch -m <old> <new>
+
+
+
 
 
