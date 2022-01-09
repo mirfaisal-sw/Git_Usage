@@ -68,6 +68,21 @@ $git -d <branch>
 ->Rename a branch:-
 $git branch -m <old> <new>
 
+=>Git clone:-
+$git clone <url>
+O/p - It creates local repository after cloning.
+
+=>git diff command:-
+$git diff
+O/p - Nothing
+As all changes we have already committed. If we do changes in a commited
+file then it will be displayed as line with having prefix "-" or  "+".
+If a line precedes with minus symbol, then it means it is deleted.
+But if any line is prefixed with plus symbol, then it means this new line 
+is added.
+
+
+
 
 
 
