@@ -68,6 +68,12 @@ $git -d <branch>
 ->Rename a branch:-
 $git branch -m <old> <new>
 
+->To work directly on remote branch:-
+$git checkout origin/Elina_StablePNP
+
+->To create mybranch and track origin/abranch:-
+$git checkout mybranch origin/abranch
+
 =>Git clone:-
 $git clone <url>
 O/p - It creates local repository after cloning.
@@ -80,6 +86,52 @@ file then it will be displayed as line with having prefix "-" or  "+".
 If a line precedes with minus symbol, then it means it is deleted.
 But if any line is prefixed with plus symbol, then it means this new line 
 is added.
+
+-> To see difference between two commits:-
+$git diff <commit1-sha> <commit2-sha> 
+
+-> To create Patch based on the changes:-
+$git diff > <file_name.patch>
+
+-> Comparing files from two branches:-
+$git diff main new_branch ./diff_test.txt
+
+->To see difference between new version of file:-
+$git diff <file_name.txt>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
