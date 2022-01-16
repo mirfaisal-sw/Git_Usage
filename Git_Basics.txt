@@ -99,6 +99,18 @@ $git diff main new_branch ./diff_test.txt
 ->To see difference between new version of file:-
 $git diff <file_name.txt>
 
+=> Creating and applying patch:-
+-> Create 10 patch files form last commit to previous onwards 
+$git format-patch <4-digit hash of last commit> -10 <-|
+$cp *.patch <new-kernel-repo-to-which-patch-to-apply>
+
+$git am 001----.patch
+$git am 002----.patch
+$git am 010----.patch
+
+-> While applying patch if error comes, then run below command.
+$git am --abort<-|
+
 
 
 
