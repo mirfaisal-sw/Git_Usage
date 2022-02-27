@@ -145,6 +145,10 @@ $ If suppose you have cloned a repo from any source and now you want
   Use above token in place of password.
   $ Password for 'https://github.com' : give your personal access token here
   
+=> To see remote repo of any local repo. Then run below command.
+$ git remote -v
+
+  
   
   
   
