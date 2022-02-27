@@ -1,0 +1,5 @@
+=> Suppose a file there which is tracked by Git between local and remote repository.
+Then to rename a file we have to use below command.
+$ git mv file_1.c file_renamed.c
+$ git commit -m "file1.c is renamed"
+$ git push -u origin master
