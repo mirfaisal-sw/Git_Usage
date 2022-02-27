@@ -116,6 +116,36 @@ $ If suppose you have cloned a repo from any source and now you want
   to maintain it from my own remote GitHub account, then we have to 
   follow below procedure.
   I. Create a repository in Github and obtain its URL, as below.
+  https://github.com/mirfaisal-sw/Project_Feb2022.git
+  
+  II. Go to any synced repository which you want to maintain.
+  $cd ../LN_Kernel
+  
+  III. Set URL of remote repository to this repository.
+  $git remote set-url origin <url of remote repository>
+  
+  IV. Set user name and email.
+  $git config --global user.name "your_github_username"
+  $ git config --global user.email "your_github_email"
+  $ git config -l
+  
+  V.Now push your local repo to remote.
+  $git push -u origin master
+  
+  It will ask for credentials, if it fails and give error as below.
+  Then follow below steps.
+  Error: remote: Support for password authentication was removed on August 13, 2021. 
+  Please use a personal access token instead.
+  
+  Solution:
+  From your GitHub account, go to Settings => Developer Settings => Personal Access Token => 
+  Generate New Token (Give your password) => Fillup the form => click Generate token => Copy 
+  the generated Token, it will be something like - ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
+  
+  Use above token in place of password.
+  $ Password for 'https://github.com' : give your personal access token here
+  
+  
   
   
   
