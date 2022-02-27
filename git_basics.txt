@@ -112,7 +112,13 @@ $git am 010----.patch
 $git am --abort<-|
 
 =>Create a remote repository on GitHub based on local repository:-
-$
+$ If suppose you have cloned a repo from any source and now you want 
+  to maintain it from my own remote GitHub account, then we have to 
+  follow below procedure.
+  I. Create a repository in Github and obtain its URL, as below.
+  
+  
+  
 
 
 
