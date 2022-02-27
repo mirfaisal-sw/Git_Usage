@@ -37,3 +37,9 @@ Connect it to Github
 But I use git@github.com:username/new_repo rather than https://github.com/username/new_repo, 
 as the former(the one starting with git....) is for use with ssh and does not need to type your 
 password every time you push things to github.
+
+=> If while doing above procedure, it ask for configuring email and user name, 
+then follow the below steps:-
+$ git config --global user.email "mirfaisalstar@gmail.com"
+$ git config --global user.name "mirfaisal-sw"
+$ git config -l
