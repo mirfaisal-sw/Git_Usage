@@ -111,6 +111,8 @@ $git am 010----.patch
 -> While applying patch if error comes, then run below command.
 $git am --abort<-|
 
+=>Create a remote repository on GitHub based on local repository:-
+$
 
 
 
