@@ -1,0 +1,14 @@
+============================================
+"git status" shows too many modified files
+============================================
+
+If "git status" shows too many modified files even if those files were not 
+modified, then this is because git is considering changed file permissions 
+also.
+To avoid this we run following command: -
+
+# For the current repository
+$git config core.filemode false   
+
+# Globally
+$git config --global core.filemode false
