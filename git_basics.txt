@@ -127,7 +127,11 @@ $ If suppose you have cloned a repo from any source and now you want
   IV. Set user name and email.
   $git config --global user.name "your_github_username"
   $ git config --global user.email "your_github_email"
-  $ git config -l
+  $ git config -l    /*this is list command, use -l or --list*/
+  
+  To see only user name - 
+  $git config user.name
+  o/p - "your user name"
   
   V.Now push your local repo to remote.
   $git push -u origin master
