@@ -160,6 +160,11 @@ $ If suppose you have cloned a repo from any source and now you want
   $ git log
   or
   $git log --oneline
+  
+=> To know changes made in a commit: 
+   $git show <commit ID>
+   Example: 
+   $git show 148188b657b1
 
   
   
