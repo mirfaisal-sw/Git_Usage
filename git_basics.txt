@@ -150,11 +150,16 @@ $ If suppose you have cloned a repo from any source and now you want
   $ Password for 'https://github.com' : give your personal access token here
   
 => To see remote repo of any local repo. Then run below command.
-$ git remote -v
+   $ git remote -v
 
 => How do I remove version tracking from a project cloned from git?
-Simply delete .git folder.
-$ rm -rf .git
+   Simply delete .git folder.
+   $ rm -rf .git
+
+=> To see all commits in local Git repositiry, we run below command: -
+  $ git log
+  or
+  $git log --oneline
 
   
   
