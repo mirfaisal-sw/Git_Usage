@@ -180,6 +180,10 @@ $ If suppose you have cloned a repo from any source and now you want
      git format-patch --signoff master --stdout > multi_commit.patch
    # create patches in the folder ~/output/directory/ for all commits that are in your branch and not in master
      git format-patch -o ~/output/directory/ --signoff master
+     
+=> To delete last commit from Git.
+   $git reset HEAD^ --hard
+
 
   
   
