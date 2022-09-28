@@ -183,6 +183,9 @@ $ If suppose you have cloned a repo from any source and now you want
      
 => To delete last commit from Git.
    $git reset HEAD^ --hard
+   
+   This will delete the last commit. 
+   
 
 
   
