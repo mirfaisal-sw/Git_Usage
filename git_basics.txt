@@ -100,6 +100,10 @@ $git diff main new_branch ./diff_test.txt
 $git diff <file_name.txt>
 
 => Creating and applying patch:-
+
+-> Create n pathces of last N commits
+   $git format-patch -N
+   
 -> Create 10 patch files form last commit to previous onwards 
 $git format-patch <4-digit hash of last commit> -10 <-|
 $cp *.patch <new-kernel-repo-to-which-patch-to-apply>
@@ -169,7 +173,13 @@ $ If suppose you have cloned a repo from any source and now you want
 => Git command to discard local changes: -
    $git reset --hard
    
-=>
+=> Other Git commands to create single patch file using multiple commits: -
+   # last three commits 
+     git format-patch -3 --stdout > multi_commit.patch
+   # all commits that are in your branch and not in master into a single patch file multi_commit.patch
+     git format-patch --signoff master --stdout > multi_commit.patch
+   # create patches in the folder ~/output/directory/ for all commits that are in your branch and not in master
+     git format-patch -o ~/output/directory/ --signoff master
 
   
   
