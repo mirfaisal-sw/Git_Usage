@@ -17,4 +17,7 @@
     [core]
         editor = vim
         
+2.) To set default editor in Git: -
+    #git config --global core.editor "vim"
+        
 
