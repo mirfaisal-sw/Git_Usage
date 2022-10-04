@@ -1,0 +1,18 @@
+
+
+1.) We can change behaviour of git and we can set various Git attributes using 
+    file - ~/.gitconfig.
+    
+    Example: - Content of file ".gitconfig" can be as below.
+    [color]
+        ui = auto
+        
+    [user]
+        name = Mir Faisal
+        email = mir.faisal@harman.com
+        
+    [editor]
+        default = vim
+        
+    [core]
+        editor = vim
