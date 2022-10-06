@@ -18,6 +18,18 @@
         editor = vim
         
 2.) To set default editor in Git: -
-    #git config --global core.editor "vim"
+    # git config --global core.editor "vim"
         
+3.) To see Git log in single line for different commits: -
+    # git log --oneline
+    
+4.) To see staged changes only file name: -
+    # git diff --cached --name-only
+    
+5.) To see only staged changes: -
+    # git diff --cached
+    
+6.) To delete top commit with commit ID: -
+    # git reset --hard <commit ID>
+    
 
