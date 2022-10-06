@@ -32,4 +32,9 @@
 6.) To delete top commit with commit ID: -
     # git reset --hard <commit ID>
     
+7.) To see help on any git command, use --help option as below.
+    Example: -
+    # git am --help
+    #git commit --help
+    
 
