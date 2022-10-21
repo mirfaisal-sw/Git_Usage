@@ -1,46 +1,46 @@
 
-$mkdir My-Git
-$cd My-Git
-$git init
+$ mkdir My-Git
+$ cd My-Git
+$ git init
 
-$ls -la
+$ ls -la
 o/p - .git
 
-$cd .git
-$ls
+$ cd .git
+$ ls
 o/p - branches config description HEAD hooks info objects refs
-$cat HEAD
+$ cat HEAD
 o/p - refs/heads/master
 
 Note - All objects are stored in .git/objects folder.
 $ find .git/objects -type f //Find files
 
 =>List files in staging area
-$git ls-files -s
+$ git ls-files -s
 
 =>To show status of Git:-
-$git status
+$ git status
 
 =>Command to set Git author name and email:-
-$git config --gloabal user.name <Name>
-$git config --gloabal user.email <Email>
-$git config --list
+$ git config --gloabal user.name <Name>
+$ git config --gloabal user.email <Email>
+$ git config --list
 
 =>Git command to unstage a file:-
-$git rm --cached <file>
+$ git rm --cached <file>
 
 =>Checkout commit or branch:-
-$git checkout <commit/file/branch>
+$ git checkout <commit/file/branch>
 
 =>Branch:-
 ->Pointers for all branches are located in .git/refs/heads fol
 
 =>Git checkout:-
-$git checkout <branch>  //Change reference to specific branch
-$git checkout <sha1>   //Change reference to specific commit
+$ git checkout <branch>  //Change reference to specific branch
+$ git checkout <sha1>   //Change reference to specific commit
 
 =>How to find HEAD is pointing to which branch or commit?
-$cat .git/HEAD
+$ cat .git/HEAD
 O/p - ref: refs/heads/mir-feature1
 
 =>Note - "git checkout" command just moves HEAD pointer and nothing
@@ -48,38 +48,38 @@ else.
 
 =>Git commands for branch management:-
 ->List all local branches
-$git branch
+$ git branch
 
 ->Create new branch:-
-$git branch <name>
+$ git branch <name>
 
 ->Create a branch with checkout:-
-$git checkout -b <branch name>
+$ git checkout -b <branch name>
 
 ->Checkout specific branch
-$git checkout <branch name>
+$ git checkout <branch name>
 
 ->Delete unmerged branch:-
-$git -D <branch>
+$ git -D <branch>
 
 ->Delete merged branch:-
-$git -d <branch>
+$ git -d <branch>
 
 ->Rename a branch:-
-$git branch -m <old> <new>
+$ git branch -m <old> <new>
 
 ->To work directly on remote branch:-
-$git checkout origin/Elina_StablePNP
+$ git checkout origin/Elina_StablePNP
 
 ->To create mybranch and track origin/abranch:-
-$git checkout mybranch origin/abranch
+$ git checkout mybranch origin/abranch
 
 =>Git clone:-
-$git clone <url>
+$ git clone <url>
 O/p - It creates local repository after cloning.
 
 =>git diff command:-
-$git diff
+$ git diff
 O/p - Nothing
 As all changes we have already committed. If we do changes in a commited
 file then it will be displayed as line with having prefix "-" or  "+".
@@ -88,32 +88,32 @@ But if any line is prefixed with plus symbol, then it means this new line
 is added.
 
 -> To see difference between two commits:-
-$git diff <commit1-sha> <commit2-sha> 
+$ git diff <commit1-sha> <commit2-sha> 
 
 -> To create Patch based on the changes:-
-$git diff > <file_name.patch>
+$ git diff > <file_name.patch>
 
 -> Comparing files from two branches:-
-$git diff main new_branch ./diff_test.txt
+$ git diff main new_branch ./diff_test.txt
 
 ->To see difference between new version of file:-
-$git diff <file_name.txt>
+$ git diff <file_name.txt>
 
 => Creating and applying patch:-
 
 -> Create n pathces of last N commits
-   $git format-patch -N
+   $ git format-patch -N
    
 -> Create 10 patch files form last commit to previous onwards 
-$git format-patch <4-digit hash of last commit> -10 <-|
-$cp *.patch <new-kernel-repo-to-which-patch-to-apply>
+$ git format-patch <4-digit hash of last commit> -10 <-|
+$ cp *.patch <new-kernel-repo-to-which-patch-to-apply>
 
-$git am 001----.patch
-$git am 002----.patch
-$git am 010----.patch
+$ git am 001----.patch
+$ git am 002----.patch
+$ git am 010----.patch
 
 -> While applying patch if error comes, then run below command.
-$git am --abort<-|
+$ git am --abort<-|
 
 =>Create a remote repository on GitHub based on local repository:-
 $ If suppose you have cloned a repo from any source and now you want 
@@ -123,10 +123,10 @@ $ If suppose you have cloned a repo from any source and now you want
   https://github.com/mirfaisal-sw/Project_Feb2022.git
   
   II. Go to any synced repository which you want to maintain.
-  $cd ../LN_Kernel
+  $ cd ../LN_Kernel
   
   III. Set URL of remote repository to this repository.
-  $git remote set-url origin <url of remote repository>
+  $ git remote set-url origin <url of remote repository>
   
   IV. Set user name and email.
   $git config --global user.name "your_github_username"
@@ -163,15 +163,15 @@ $ If suppose you have cloned a repo from any source and now you want
 => To see all commits in local Git repositiry, we run below command: -
   $ git log
   or
-  $git log --oneline
+  $ git log --oneline
   
 => To know changes made in a commit: 
-   $git show <commit ID>
+   $ git show <commit ID>
    Example: 
-   $git show 148188b657b1
+   $ git show 148188b657b1
    
 => Git command to discard local changes: -
-   $git reset --hard
+   $ git reset --hard
    
 => Other Git commands to create single patch file using multiple commits: -
    # last three commits 
@@ -180,6 +180,10 @@ $ If suppose you have cloned a repo from any source and now you want
      git format-patch --signoff master --stdout > multi_commit.patch
    # create patches in the folder ~/output/directory/ for all commits that are in your branch and not in master
      git format-patch -o ~/output/directory/ --signoff master
+     
+=> Create patch based on Commit ID: -
+    We can create patch for a specific commit by using its Commit ID.
+    $ git format-patch -1 <Commit-ID> --stdout > file_name.patch
      
 => To delete last commit from Git.
    $git reset HEAD^ --hard
