@@ -36,5 +36,12 @@
     Example: -
     # git am --help
     #git commit --help
+
+8.) Filter git log by the name of author or commiter, as below.
+    # git log --author="Mir Faisal"
+    # git log --committer="Mir Faisal"
+    
+    
+
     
 
