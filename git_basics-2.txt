@@ -41,6 +41,9 @@
     # git log --author="Mir Faisal"
     # git log --committer="Mir Faisal"
     
+9.) To see the available releases run below command: -
+    # git tag
+    
     
 
     
