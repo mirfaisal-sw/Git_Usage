@@ -19,3 +19,5 @@ How to push code changes to own repo: -
 	user id
 	Pwd - for password, we have to use "Access token"
 	
+	To generate token, go to Settings -> Developer settings.
+	
