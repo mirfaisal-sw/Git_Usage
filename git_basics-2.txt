@@ -44,6 +44,17 @@
 9.) To see the available releases run below command: -
     # git tag
     
+10.) Git cherrypick: -
+Suppose there are two branches feature-1 and feature-2 and we want to take a commit of feature-1 
+to feature-2. For this we will do following steps.
+    i. Checkout to feature-1 branch.
+        # git checkout feature-1
+    ii. Run "git log" and copy Hash of the commit (six characters is enough) to be cherrypicked.
+    iii. Now switch to feature2 and run git cherry-pick on the hash you just got from the log.
+        # git checkout feature-2
+        # git cherrypick <Hash of the commit copied in step - II>
+    
+    
     
 
     
