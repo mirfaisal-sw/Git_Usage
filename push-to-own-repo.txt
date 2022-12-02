@@ -1,7 +1,7 @@
 
 
-How to push code changes to own repo: -
-=================================
+How to push changes to own repo: -
+====================================
 
 	git clone https://github.com/mirfaisal-sw/Linux_device_driver_codes.git
 	cd Linux_device_driver_codes/
