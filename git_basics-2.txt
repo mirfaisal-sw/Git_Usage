@@ -53,6 +53,17 @@ to feature-2. For this we will do following steps.
     iii. Now switch to feature2 and run git cherry-pick on the hash you just got from the log.
         # git checkout feature-2
         # git cherrypick <Hash of the commit copied in step - II>
+        
+11) Difference between "git am" and "git apply": -
+"git apply" is for applying straight diffs (e.g. from git diff) whereas git am is for applying patches
+and sequences of patches and is the "opposite" of git format-patch. git am tries to extract commit messages
+and author details from email messages which is why it can make commits.
+
+With "git am" we apply the patch so when we run git status we won't see any local changes, but git log will
+show the patch have been committed to the source code.
+But with git apply we make the changes in the source files as if we were writing the code yourself, consequently
+git status and git diff will output the changes appeared in the patch we applied. Hence with git apply we can 
+fix/add more changes and git add them together as a single new patch.
     
     
     
