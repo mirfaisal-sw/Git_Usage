@@ -1,0 +1,17 @@
+Procedure to add an image file in Readme.md: - 
+===================================================
+Method 1: Drag and drop image file to Readme.md
+-----------
+I. Click the pen icon to edit Readme.md file.
+II. Drag and drop the image into the edit box.
+III. Click the “Commit changes” button to save the image.
+
+Method 2:  Markdown Syntax
+--------------
+The syntax looks like: ![Alt text](image link)
+Add the above line in Readme.md file.
+The syntax starts with !, the alt text is wrapped in the brackets [], and the image link is
+wrapped in the parentheses.
+This method is mainly used when the image to be used is saved somewhere in the repository.
+
+Example: ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
