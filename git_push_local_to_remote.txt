@@ -1,0 +1,31 @@
+
+
+git config --global user.email mirfaisalstar@gmail.com
+git config --global user.name mirfaisalsw
+git config --global core.editor "vim"
+
+git status
+git add Proj-frag-2/
+
+
+git commit -s
+
+git commit --ammend
+
+git push origin main
+
+git remote add upstream https://github.com/mirfaisal-sw/Interrupt_Storm_Detector.git
+
+git push origin main
+
+git remote add origin https://github.com/mirfaisal-sw/Interrupt_Storm_Detector.git
+
+git remote add origin https://github.com/mirfaisal-sw/Interrupt_Storm_Detector.git
+
+git status
+git push origin main
+
+User Id - mirfaisalsw
+Pwd/Token - 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
+
+
