@@ -20,3 +20,9 @@ $ git push -f origin main
 
 Error 2:
 ---------
+ERROR: - 
+$ git pull + ot possible to fast-forward, aborting. 
+SOLUTION: - 
+Run the command: - 
+$ git pull origin --rebase
+
