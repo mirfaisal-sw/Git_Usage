@@ -1,0 +1,15 @@
+
+Git stash usage: - 
+=====================
+
+1. Suppose we do not want to commit our local changes and want to keep it as backup, so that 
+any other git operations like "git pull" etc can be done. So, to do this git stash command 
+can be used.
+
+# git stash
+
+Now, once we want to restore stashed changes, which are backup of uncomitted local changes, then we can run 
+below command - 
+# git stash pop
+
+
