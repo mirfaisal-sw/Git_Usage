@@ -22,8 +22,8 @@ $ git ls-files -s
 $ git status
 
 =>Command to set Git author name and email:-
-$ git config --gloabal user.name <Name>
-$ git config --gloabal user.email <Email>
+$ git config --global user.name <Name>
+$ git config --global user.email <Email>
 $ git config --list
 
 =>Git command to unstage a file:-
